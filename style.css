@@ -46,7 +46,7 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 3px 20px 16px 9px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px -9px 21px 7px rgba(0, 0, 0, 0.41);
 }
 
 .center-me {
@@ -69,4 +69,15 @@ ul {
   font-weight: bold;
   font-size: 1.2em;
   padding-right: 0.4em;
+}
+/* Projektu langas */
+.projektai {
+  padding-top: 5em;
+  min-height: 50vh;
+}
+
+.projektai h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+  padding-bottom: 1em;
+  width: 100%;
 }
