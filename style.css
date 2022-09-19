@@ -73,3 +73,19 @@ ul {
   padding-bottom: 1em;
   width: 100%;
 }
+.darbai {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center space-between;
+  gap: 10px;
+  
+
+}
+.kortele img {
+  width: 200px;
+  height: 150px;
+  
+  object-fit: cover;
+  
+}
