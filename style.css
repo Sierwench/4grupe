@@ -1,143 +1,231 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@media only screen and (min-width: 300px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  header {
+    padding: 0.5em 0;
+    font-size: 2em;
+  }
+  nav {
+    display: none;
+  }
+  .main-logo {
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 0 0.5em;
+  }
+
+  .background {
+    background-image: url("https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px -9px 21px 7px rgba(0, 0, 0, 0.41);
+  }
+
+  .center-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .mb-hide {
+    display: none;
+  }
+
+  .kubelis {
+    background-color: rgba(0, 0, 0, 0.504);
+    margin: 0.2em;
+    color: white;
+    padding: 0.5em;
+    font-size: 2.5em;
+  }
+  /* VIRSUS DONE */
+  .projektai {
+    padding: 5em 2em;
+    min-height: 50vh;
+  }
+  .projektai h2,
+  .about h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+    padding-bottom: 1em;
+    width: 100%;
+  }
+  .darbai {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+
+  .kortele h3 {
+    background-color: black;
+    color: white;
+    width: 60%;
+    padding: 5px;
+    position: relative;
+    top: 60px;
+    text-align: center;
+  }
+  .kortele img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    padding-top: 1.2em;
+  }
 }
 
-.wrapper {
-  width: 980px;
-  margin: 0 auto;
-}
+@media only screen and (min-width: 900) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 
-header {
-  padding: 1.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
 
-header p,
-a {
-  font-size: 1.4em;
-}
+  header {
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-li,
-a {
-  color: black;
-  text-decoration: none;
-  padding: 0.5em;
-}
-ul {
-  list-style-type: none;
-  display: flex;
-}
+  header p,
+  a {
+    font-size: 1.4em;
+  }
 
-.background {
-  background-image: url("https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0px -9px 21px 7px rgba(0, 0, 0, 0.41);
-}
+  li,
+  a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
 
-.center-me {
-  color: white;
-  font-size: 2.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-  font-weight: 800;
-}
+  .background {
+    background-image: url("https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px -9px 21px 7px rgba(0, 0, 0, 0.41);
+  }
 
-.kubelis {
-  background-color: rgba(0, 0, 0, 0.504);
-  margin: 0.2em;
-  padding: 0.5em;
-}
+  .center-me {
+    color: white;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    font-weight: 800;
+  }
 
-.main-logo {
-  font-weight: bold;
-  font-size: 1.2em;
-  padding-right: 0.4em;
-}
-/* Projektu langas */
-.projektai {
-  padding-top: 5em;
-  min-height: 50vh;
-}
+  .kubelis {
+    background-color: rgba(0, 0, 0, 0.504);
+    margin: 0.2em;
+    padding: 0.5em;
+  }
 
-.projektai h2,
-.about h2 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.322);
-  padding-bottom: 1em;
-  width: 100%;
-}
-.darbai {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  justify-content: space-evenly;
-  gap: 10px;
-}
+  .main-logo {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-right: 0.4em;
+  }
+  /* Projektu langas */
+  .projektai {
+    padding-top: 5em;
+    min-height: 50vh;
+  }
 
-.kortele h3 {
-  background-color: black;
-  color: white;
-  width: 60%;
-  padding: 5px;
-  position: relative;
-  top: 58px;
-  text-align: center;
-}
+  .projektai h2,
+  .about h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+    padding-bottom: 1em;
+    width: 100%;
+  }
+  .darbai {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
 
-.kortele img {
-  width: 300px;
-  height: 250px;
-  object-fit: cover;
-  padding-top: 1.2em;
-}
+  .kortele h3 {
+    background-color: black;
+    color: white;
+    width: 60%;
+    padding: 5px;
+    position: relative;
+    top: 58px;
+    text-align: center;
+  }
 
-.about {
-  padding: 2em;
-}
+  .kortele img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    padding-top: 1.2em;
+  }
 
-p {
-  padding: 1.5em 0;
-}
+  .about {
+    padding: 2em;
+  }
 
-/* profile tabs */
+  p {
+    padding: 1.5em 0;
+  }
 
-.info {
-  width: 30%;
-  padding: 1.5em;
-}
+  /* profile tabs */
 
-.info h3 {
-  padding: 1em 0;
-  color: rgba(27, 25, 25, 0.983);
-}
+  .info {
+    width: 30%;
+    padding: 1.5em;
+  }
 
-.info h4 {
-  font-weight: 100;
-  color: rgba(140, 136, 136, 0.589);
-}
+  .info h3 {
+    padding: 1em 0;
+    color: rgba(27, 25, 25, 0.983);
+  }
 
-.info img {
-  width: 250px;
-  height: 250px;
-}
+  .info h4 {
+    font-weight: 100;
+    color: rgba(140, 136, 136, 0.589);
+  }
 
-.info-button {
-  width: 100%;
-  padding: 0.5em;
-  border: none;
-  background-color: rgba(128, 128, 128, 0.606);
-  font-size: 1em;
-}
+  .info img {
+    width: 250px;
+    height: 250px;
+  }
 
-.info-cards {
-  display: flex;
-  width: 100%;
+  .info-button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.606);
+    font-size: 1em;
+  }
+
+  .info-cards {
+    display: flex;
+    width: 100%;
+  }
 }
