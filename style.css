@@ -1,9 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -57,8 +55,13 @@ nav {
   min-height: 50vh;
 }
 
+.kortele {
+  height: 265px;
+}
+
 .projektai h2,
-.about h2 {
+.about h2,
+.contact h2 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.322);
   padding-bottom: 1em;
   width: 100%;
@@ -68,51 +71,147 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  justify-content: space-evenly;
-  gap: 10px;
 }
 
 .kortele h3 {
   background-color: black;
   color: white;
-  width: 60%;
+  width: 50%;
   padding: 5px;
+  font-weight: 500;
   position: relative;
   top: 60px;
   text-align: center;
 }
 
 .kortele img {
-  width: 300px;
+  width: 350px;
   height: 250px;
   object-fit: cover;
   padding-top: 1.2em;
 }
+.about,
+.contact {
+  padding: 2em;
+}
 
+p {
+  padding: 1.5em 0;
+}
 
-@media only screen and (min-width: 900) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+/* profile tabs */
+
+.info {
+  padding-bottom: 1.5em;
+}
+
+.info h3 {
+  padding: 1em 0;
+  color: rgba(27, 25, 25, 0.983);
+}
+
+.info h4 {
+  font-weight: 100;
+  color: rgba(140, 136, 136, 0.589);
+}
+
+.info img {
+  width: 300px;
+  height: 250px;
+}
+
+.info-button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.606);
+  font-size: 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.form p {
+  width: 100%;
+}
+
+.send-message {
+  width: 40%;
+  background-color: black;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+}
+
+@media only screen and (min-width: 500px) {
+  .form {
+    padding: 2.2em 0;
+  }
+  .form img {
+    margin-top: 2em;
+  }
+  .info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .info {
+    flex-basis: 40%;
+    padding-left: 0;
+    padding-right: 4.5em;
+  }
+  .darbai {
+    gap: 2em;
+  }
+  .mb-hide {
+    display: unset;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
   }
 
+  header,
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  li,
+  a {
+    list-style-type: none;
+    padding: 0.2em;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .wrapper {
-    width: 980px;
+    width: 50%;
     margin: 0 auto;
   }
 
   header {
-    padding: 1.5em;
+    padding: 1.5em 5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  header p,
-  a {
-    font-size: 1.4em;
   }
 
   li,
@@ -160,22 +259,22 @@ nav {
   /* Projektu langas */
   .projektai {
     padding-top: 5em;
-    min-height: 50vh;
   }
 
   .projektai h2,
   .about h2 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.322);
     padding-bottom: 1em;
-    width: 100%;
+    width: 40%;
   }
 
   .darbai {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: space-evenly;
     gap: 10px;
+    width: 60%;
   }
 
   .kortele h3 {
@@ -189,8 +288,7 @@ nav {
   }
 
   .kortele img {
-    width: 300px;
-    height: 250px;
+    width: calc(200px + 60px);
     object-fit: cover;
     padding-top: 1.2em;
   }
@@ -221,8 +319,7 @@ nav {
   }
 
   .info img {
-    width: 250px;
-    height: 250px;
+    width: calc(200px + 20px);
   }
 
   .info-button {
@@ -235,6 +332,7 @@ nav {
 
   .info-cards {
     display: flex;
-    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
