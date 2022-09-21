@@ -68,7 +68,8 @@ ul {
   min-height: 50vh;
 }
 
-.projektai h2 {
+.projektai h2,
+.about h2 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.322);
   padding-bottom: 1em;
   width: 100%;
@@ -96,4 +97,47 @@ ul {
   height: 250px;
   object-fit: cover;
   padding-top: 1.2em;
+}
+
+.about {
+  padding: 2em;
+}
+
+p {
+  padding: 1.5em 0;
+}
+
+/* profile tabs */
+
+.info {
+  width: 30%;
+  padding: 1.5em;
+}
+
+.info h3 {
+  padding: 1em 0;
+  color: rgba(27, 25, 25, 0.983);
+}
+
+.info h4 {
+  font-weight: 100;
+  color: rgba(140, 136, 136, 0.589);
+}
+
+.info img {
+  width: 250px;
+  height: 250px;
+}
+
+.info-button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.606);
+  font-size: 1em;
+}
+
+.info-cards {
+  display: flex;
+  width: 100%;
 }
